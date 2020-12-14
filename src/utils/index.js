@@ -1,4 +1,4 @@
 import getCdnUrl from "./cdn-url";
-import { isEmailValid, sendEmail, sendEmailWithAttachment } from "./email";
+import { isEmailValid, sendEmail } from "./email";
 
-export { getCdnUrl, isEmailValid, sendEmail, sendEmailWithAttachment };
+export { getCdnUrl, isEmailValid, sendEmail };
