@@ -2,10 +2,7 @@ const navigationLinks = [
   {
     key: "begin",
     title: "Where to begin",
-    links: [
-      { title: "Our Mission", href: "/our-mission" },
-      { title: "FAQs", href: "/faqs" }
-    ]
+    links: [{ title: "Our Mission", href: "/our-mission" }]
   },
   {
     key: "about",
