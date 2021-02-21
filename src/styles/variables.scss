@@ -4,6 +4,9 @@ $MAIN_COLOR_INVERTED: #994b04;
 $MAIN_COLOR_DARKEN: darken($MAIN_COLOR, 10);
 $MAIN_COLOR_LIGHTEN: lighten($MAIN_COLOR, 10);
 $SEC_COLOR: rgba(31, 130, 227, 0.8);
+$ICON_BLUE: #001f3f;
+$FACE_BLUE: #7fc9ff;
+$GRAY_600: #1f2022;
 $GRAY_500: #3d3f42;
 $GRAY_400: #5a5c5e;
 $GRAY_300: #9fa1a4;
@@ -21,6 +24,7 @@ $BOX_SHADOW_WIDGET: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
 $XXSMALL: 0.3rem;
 $XSMALL: 0.6rem;
 $SMALL: 1.2rem;
+$MIDSMALL: 1.6rem;
 $MEDIUM: 1.8rem;
 $MIDLARGE: 2.4rem;
 $LARGE: 3.2rem;
@@ -35,6 +39,12 @@ $footerHeight: 50px;
 $inboxHeight: 85vh;
 $lineHeight: 1.5;
 
+//Component Heights
+$NAV_MENU_HEIGHT: 65px;
+$FOOTER_HEIGHT: 50px;
+$MAIN_HEIGHT: calc(100vh - 115px);
+$LINE_HEIGHT: 1.5;
+
 // Screen Breakpoints
 $MEDIUM_SCREEN: 641px;
 $LARGE_SCREEN: 1025px;
@@ -42,8 +52,10 @@ $XLARGE_SCREEN: 1441px;
 $XXLARGE_SCREEN: 1921px;
 
 // Site Fonts
-$MAIN_FONT: "Ubuntu Light", sans-serif;
-$SEC_FONT: "Ubuntu", sans-serif;
+$MAIN_FONT: "Gotham Regular";
+$MAIN_FONT_LIGHT: "Gotham Light";
+$SEC_FONT: "Gilmer Regular";
+$SEC_FONT_LIGHT: "Gilmer Light";
 
 // Fonts CDN
 $FONTS_CDN: "https://cdn-e-and-b-solutions.s3.amazonaws.com/resources/fonts";

@@ -9,74 +9,127 @@
     top: 0;
     left: 0;
     z-index: 9000;
-    width: 100%;
-    height: $navMenuHeight;
-    padding: 0 $SMALL;
-    background-color: white;
-    box-shadow: $BOX_SHADOW;
-    &__toggle {
-      position: absolute;
-      top: 50%;
-      z-index: 9001;
-      transform: translateY(-50%);
-    }
-    &__logo {
-      position: absolute;
-      left: 50%;
-      z-index: 9001;
-      transform: translateX(-50%);
-    }
-    &__links--mobile {
-      position: fixed;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      padding-top: $navMenuHeight;
-      overflow: auto;
-      background-color: white;
-      transition: transform 0.3s ease;
-      .navbar__links-content {
-        height: 100%;
-        overflow-y: auto;
-        border-top: solid 1px $MAIN_COLOR;
-      }
-      &.navbar__links--open {
-        z-index: 9000;
-        transform: translateX(100%);
-      }
-    }
-    &__links--desktop {
-      display: none;
-    }
-  }
-}
-
-//Medium screens - TABLET
-//min-width 641px, medium screens
-@media only screen and (min-width: $MEDIUM_SCREEN) {
-}
-
-//Large screens - DESKTOP
-//min-width 1025px, large screens
-@media only screen and (min-width: $LARGE_SCREEN) {
-  .navbar {
     display: flex;
     align-items: center;
-    &__toggle {
-      display: none;
-    }
+    justify-content: space-between;
+    width: 100%;
+    height: $NAV_MENU_HEIGHT;
+    padding: 0 $MIDLARGE;
+    // background-color: white;
+    // background-color: $ICON_BLUE;
+    background-color: $FACE_BLUE;
     &__logo {
-      position: static;
-      left: auto;
-      transform: none;
+      z-index: 9001;
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
     }
-    &__links--mobile {
-      display: none;
+    &__toggle {
+      z-index: 9001;
     }
-    &__links--desktop {
-      display: block;
-      margin-left: $MEDIUM;
+    &__links {
+      position: fixed;
+      top: $NAV_MENU_HEIGHT;
+      right: -101%;
+      z-index: 9001;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      padding-top: $XXLARGE;
+      background-color: $MAIN_COLOR_DARKEN;
+      transition: transform 0.3s ease;
+      &.navbar--open {
+        overflow: auto;
+        transform: translateX(-101%);
+      }
+    }
+    &__link {
+      @include font-type(
+        $MAIN_FONT_LIGHT,
+        $LARGE,
+        rgba($color: $FACE_BLUE, $alpha: 0.9)
+      );
+      @include font-type(
+        $MAIN_FONT_LIGHT,
+        $LARGE,
+        rgba($color: $ICON_BLUE, $alpha: 0.9)
+      );
+
+      padding: $MEDIUM;
+      // color: rgba($color: #fff, $alpha: 0.9);
+      // color: rgba($color: $FACE_BLUE, $alpha: 0.9);
+      text-align: center;
+    }
+  }
+
+  //Medium screens - TABLET
+  //min-width 641px, medium screens
+  @media only screen and (min-width: $MEDIUM_SCREEN) {
+  }
+
+  //Large screens - DESKTOP
+  //min-width 1025px, large screens
+  @media only screen and (min-width: $LARGE_SCREEN) {
+    .navbar {
+      justify-content: space-between;
+      &__logo {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+      }
+      &__toggle {
+        display: none;
+      }
+      &__links {
+        position: relative;
+        top: inherit;
+        right: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: inherit;
+        height: inherit;
+        padding: 0;
+        background-color: inherit;
+        transition: none;
+      }
+      &__link {
+        @include font-type(
+          $SEC_FONT_LIGHT,
+          $MIDSMALL,
+          400,
+          rgba($color: $FACE_BLUE, $alpha: 0.9)
+        );
+        @include font-type(
+          $SEC_FONT_LIGHT,
+          $MIDSMALL,
+          400,
+          rgba($color: $ICON_BLUE, $alpha: 0.9)
+        );
+
+        position: relative;
+        margin-bottom: $MIDSMALL;
+        padding-bottom: $XSMALL;
+        &::after {
+          position: absolute;
+          bottom: 1px;
+          left: 10%;
+          width: 80%;
+          border-style: solid;
+          border-width: 0 0 1px;
+          opacity: 0;
+          content: "";
+        }
+        &:hover::after {
+          opacity: 1;
+          transition: all 0.2s ease-in-out;
+        }
+      }
     }
   }
 }

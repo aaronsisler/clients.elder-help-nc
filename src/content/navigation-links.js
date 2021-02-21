@@ -1,13 +1,23 @@
 const navigationLinks = [
   {
-    key: "begin",
-    title: "Where to begin",
-    links: [{ title: "Our Mission", href: "/our-mission" }]
+    key: "who-we-are",
+    title: "Who we are",
+    href: "/who-we-are"
   },
   {
-    key: "about",
-    title: "About Us",
-    links: [{ title: "Contact Us", href: "/contact" }]
+    key: "what-we-do",
+    title: "What We Do",
+    href: "/what-we-do"
+  },
+  {
+    key: "take-action",
+    title: "Take Action",
+    href: "/take-action"
+  },
+  {
+    key: "get-in-touch",
+    title: "Get In Touch",
+    href: "/get-in-touch"
   }
 ];
 
