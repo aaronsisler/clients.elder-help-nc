@@ -70,7 +70,8 @@
       &__logo {
         display: flex;
         align-items: center;
-        width: fit-content;
+        // width: fit-content;
+        width: 300px;
       }
       &__toggle {
         display: none;
