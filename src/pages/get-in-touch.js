@@ -1,9 +1,9 @@
 import React from "react";
-import GetInTouchContainer from "../containers/get-in-touch-container";
+import ContactContainer from "../containers/contact-container";
 
 const GetInTouchPage = () => (
   <main>
-    <GetInTouchContainer />
+    <ContactContainer />
   </main>
 );
 
