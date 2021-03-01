@@ -1,6 +1,6 @@
 // CDN URL
 export const CDN_URL =
-  "https://cdn-e-and-b-solutions.s3.amazonaws.com/hunter-hill";
+  "https://cdn-e-and-b-solutions.s3.amazonaws.com/elder-help";
 
 // Google Maps
 export const CONTACT_ADDRESS = ["891 Noell Lane", "Rocky Mount, NC 27804"];

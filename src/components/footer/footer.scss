@@ -14,6 +14,7 @@
     color: white;
     text-align: center;
     background-color: $GRAY_600;
+    background-color: $MAIN_COLOR;
     &__copyright {
       color: white;
     }
@@ -21,7 +22,7 @@
       color: white;
       text-decoration: none;
       &:hover {
-        color: $MAIN_COLOR_LIGHTEN;
+        color: $SEC_COLOR;
         transition: color 0.5s ease-in;
       }
     }

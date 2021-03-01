@@ -4,9 +4,12 @@
 //Small screens - MOBILE
 @media only screen {
   .hyperlink {
-    @include font-type($MAIN_FONT, $MEDIUM);
+    @include font-type(
+      $MAIN_FONT_LIGHT,
+      $MEDIUM,
+      rgba($color: white, $alpha: 0.6)
+    );
 
-    color: $MAIN_COLOR;
     text-decoration: none;
     cursor: pointer;
     &:disabled {

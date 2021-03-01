@@ -15,16 +15,12 @@
     width: 100%;
     height: $NAV_MENU_HEIGHT;
     padding: 0 $MIDLARGE;
-    // background-color: white;
-    // background-color: $ICON_BLUE;
-    background-color: $FACE_BLUE;
+    background-color: $MAIN_COLOR;
     &__logo {
       z-index: 9001;
       display: flex;
       align-content: center;
       justify-content: space-between;
-      width: 50px;
-      height: 50px;
       cursor: pointer;
     }
     &__toggle {
@@ -41,6 +37,7 @@
       height: 100%;
       padding-top: $XXLARGE;
       background-color: $MAIN_COLOR_DARKEN;
+      background-color: $MAIN_COLOR;
       transition: transform 0.3s ease;
       &.navbar--open {
         overflow: auto;
@@ -51,17 +48,11 @@
       @include font-type(
         $MAIN_FONT_LIGHT,
         $LARGE,
-        rgba($color: $FACE_BLUE, $alpha: 0.9)
-      );
-      @include font-type(
-        $MAIN_FONT_LIGHT,
-        $LARGE,
-        rgba($color: $ICON_BLUE, $alpha: 0.9)
+        rgba($color: white, $alpha: 0.9)
       );
 
       padding: $MEDIUM;
-      // color: rgba($color: #fff, $alpha: 0.9);
-      // color: rgba($color: $FACE_BLUE, $alpha: 0.9);
+      color: white;
       text-align: center;
     }
   }
@@ -103,13 +94,7 @@
           $SEC_FONT_LIGHT,
           $MIDSMALL,
           400,
-          rgba($color: $FACE_BLUE, $alpha: 0.9)
-        );
-        @include font-type(
-          $SEC_FONT_LIGHT,
-          $MIDSMALL,
-          400,
-          rgba($color: $ICON_BLUE, $alpha: 0.9)
+          rgba($color: white, $alpha: 0.9)
         );
 
         position: relative;
@@ -120,6 +105,7 @@
           bottom: 1px;
           left: 10%;
           width: 80%;
+          color: $SEC_COLOR;
           border-style: solid;
           border-width: 0 0 1px;
           opacity: 0;
