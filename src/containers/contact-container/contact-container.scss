@@ -1,11 +1,16 @@
+/* stylelint-disable at-rule-empty-line-before, declaration-colon-newline-after */
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
 //Small screens - MOBILE
 @media only screen {
   .contact-container {
-    background-color: #bbf0f3;
-    background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);
+    background-color: white;
+    background-image: linear-gradient(
+      315deg,
+      $MAIN_COLOR_INVERTED 0%,
+      rgba(65, 20, 124, 0.404) 74%
+    );
     &__content {
       display: grid;
       grid-gap: $MEDIUM;

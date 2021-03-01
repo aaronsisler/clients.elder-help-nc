@@ -3,11 +3,11 @@ export const CDN_URL =
   "https://cdn-e-and-b-solutions.s3.amazonaws.com/elder-help";
 
 // Google Maps
-export const CONTACT_ADDRESS = ["891 Noell Lane", "Rocky Mount, NC 27804"];
+export const CONTACT_ADDRESS = ["143 Rosedale Dr", "Elizabeth City, NC 27909"];
 export const GOOGLE_MAPS_LOCATION =
-  "https://www.google.com/maps/dir/35.668317,-78.8495883/Hunter+Hill+Assisted+Living,+891+Noell+Ln,+Rocky+Mount,+NC+27804/@35.8224906,-78.9174346";
+  "https://www.google.com/maps/place/143+Rosedale+Dr,+Elizabeth+City,+NC+27909/@36.3233234,-76.2183693";
 
-// Contact Emails
+// Contact Email
 export const CONTACT_EMAIL = "elderhelp.org@gmail.com ";
 //Testing
 // export const CONTACT_EMAIL = "aaron.sisler@eandbsolutions.com";
