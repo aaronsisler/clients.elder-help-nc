@@ -32,7 +32,11 @@ const Navbar = () => {
       </div>
       <div className={cn("navbar__links", menuToggledClass)}>
         {navigationLinks.map(navLink => (
-          <Hyperlink className="navbar__link" {...navLink} />
+          <Hyperlink
+            className="navbar__link"
+            onClick={() => setMenuOpen(false)}
+            {...navLink}
+          />
         ))}
       </div>
     </nav>
