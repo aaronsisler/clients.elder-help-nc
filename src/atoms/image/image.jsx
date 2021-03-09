@@ -4,14 +4,14 @@ import PropTypes from "prop-types";
 
 import "./image.scss";
 
-const Image = ({ altText, className, src }) => (
-  <img className={cn("image", className)} src={src} alt={altText} />
+const Image = ({ altText, className, imgSrc }) => (
+  <img className={cn("image", className)} src={imgSrc} alt={altText} />
 );
 
 Image.propTypes = {
   altText: PropTypes.string.isRequired,
   className: PropTypes.string,
-  src: PropTypes.string.isRequired
+  imgSrc: PropTypes.string.isRequired
 };
 
 export default Image;

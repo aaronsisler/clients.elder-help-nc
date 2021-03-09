@@ -3,29 +3,16 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .landing-container {
-    &__splash {
-      min-height: 75vh;
-      padding: 50% 0;
-      text-align: center;
-      background-color: $SEC_COLOR;
+  .goal-widget {
+    margin-bottom: $XLARGE;
+    &__image {
+      padding: 0 25%;
     }
     &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE, bold);
+      @include font-type($MAIN_FONT, $LARGE);
 
-      margin: $LARGE 0;
+      margin: $SMALL 0;
       text-align: center;
-    }
-    &__mission {
-      @include font-type($SEC_FONT, $MEDIUM);
-
-      margin: $LARGE 0 $XXLARGE;
-      padding: 0 $SMALL;
-      text-align: center;
-    }
-    &__goals {
-    }
-    &__goal-widget {
     }
   }
 }
