@@ -5,8 +5,10 @@
 @media only screen {
   .landing-container {
     &__splash {
-      min-height: 75vh;
-      padding: 50% 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 75vh;
       text-align: center;
       background-color: $SEC_COLOR;
     }
@@ -23,19 +25,40 @@
       padding: 0 $SMALL;
       text-align: center;
     }
-    &__goals {
-    }
-    &__goal-widget {
-    }
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .landing-container {
+    &__mission {
+      margin-bottom: $XLARGE;
+    }
+    &__goals {
+      display: grid;
+      grid-auto-flow: column;
+      gap: $MEDIUM;
+      justify-content: center;
+      margin-bottom: $LARGE;
+      padding: 0 $LARGE;
+    }
+  }
 }
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .landing-container {
+    &__splash {
+    }
+    &__title {
+    }
+    &__mission {
+      margin: $LARGE 0 $LARGE;
+    }
+    &__goals {
+      padding: $SMALL;
+    }
+  }
 }
 
 //XLarge screens

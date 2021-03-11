@@ -1,6 +1,7 @@
 import React from "react";
 import goals from "../../content/goals";
 import GoalWidget from "../../components/goal-widget";
+
 import "./landing-container.scss";
 
 const LandingContainer = () => (

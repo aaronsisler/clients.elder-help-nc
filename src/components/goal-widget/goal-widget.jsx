@@ -13,7 +13,7 @@ const GoalWidget = ({ className, imgSrc, title }) => (
   </div>
 );
 
-Image.propTypes = {
+GoalWidget.propTypes = {
   className: PropTypes.string,
   imgSrc: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired
