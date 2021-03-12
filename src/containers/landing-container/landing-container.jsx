@@ -1,12 +1,21 @@
 import React from "react";
 import goals from "../../content/goals";
+import Image from "../../atoms/image";
 import GoalWidget from "../../components/goal-widget";
+import { getCdnUrl } from "../../utils";
 
 import "./landing-container.scss";
 
+const CDN_URL = getCdnUrl("/landing");
+
+const splashImage = {
+  altText: "Flowers on the front outdoor porch",
+  imgSrc: `${CDN_URL}/landing-container__splash-image-3.jpg`
+};
+
 const LandingContainer = () => (
   <div className="landing-container">
-    <div className="landing-container__splash">Splash Image</div>
+    <Image className="landing-container__splash-image" {...splashImage} />
     <h2 className="landing-container__title">Elder Help NC's Mission</h2>
     <p className="landing-container__mission">
       To develop, organize and provide Health, Education, Local resources and

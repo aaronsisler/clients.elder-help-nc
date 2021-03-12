@@ -4,22 +4,20 @@
 //Small screens - MOBILE
 @media only screen {
   .landing-container {
-    &__splash {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 75vh;
-      text-align: center;
-      background-color: $SEC_COLOR;
+    &__splash-image {
+      height: 100%;
+      max-height: 75vmin;
+      object-fit: cover;
     }
     &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE, bold);
+      @include font-type($MAIN_FONT, $LARGE, bold);
 
       margin: $LARGE 0;
       text-align: center;
     }
     &__mission {
       @include font-type($SEC_FONT, $MEDIUM);
+      @include font-type($SEC_FONT, $MIDLARGE);
 
       margin: $LARGE 0 $XXLARGE;
       padding: 0 $SMALL;
