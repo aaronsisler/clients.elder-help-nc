@@ -20,7 +20,8 @@
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
   .goal-widget {
-    max-width: 300px;
+    width: 20vmax;
+    max-width: 175px;
     margin-bottom: 0;
     &__image {
       padding: 0 15%;
@@ -33,6 +34,17 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .goal-widget {
+    width: 30vmin;
+    max-width: 300px;
+    margin-bottom: 0;
+    &__image {
+      padding: 0 15%;
+    }
+    &__title {
+      font-size: $MIDLARGE;
+    }
+  }
 }
 
 //XLarge screens
