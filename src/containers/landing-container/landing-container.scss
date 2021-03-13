@@ -4,23 +4,60 @@
 //Small screens - MOBILE
 @media only screen {
   .landing-container {
-    &__splash-image {
-      height: 100%;
-      max-height: 75vmin;
-      object-fit: cover;
-    }
-    &__title {
-      @include font-type($MAIN_FONT, $LARGE);
+    &__splash {
+      position: relative;
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background-color: $MAIN_COLOR;
+      // background-color: $SEC_COLOR;
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: 10;
+        width: 125%;
+        height: 25vh;
+        background-color: $MAIN_COLOR;
+        // background-color: $SEC_COLOR;
+        border-radius: 50%;
+        transform: translateX(-50%);
+        transform-origin: bottom;
+        content: "";
+      }
+      &-image {
+        min-height: 45vh;
+        max-height: 75vmin;
+        object-fit: cover;
+      }
+      &-title {
+        @include font-type($MAIN_FONT, $LARGE, 400, white);
+        // @include font-type($MAIN_FONT, $LARGE, 400, $MAIN_COLOR);
 
-      margin: $LARGE 0;
-      text-align: center;
-    }
-    &__mission {
-      @include font-type($MAIN_FONT, $MIDLARGE);
+        z-index: 30;
+        margin: $LARGE 0;
+        text-align: center;
+      }
+      &-mission {
+        @include font-type($MAIN_FONT, $MIDLARGE, 400, white);
+        // @include font-type($MAIN_FONT, $MIDLARGE, 400, $MAIN_COLOR);
 
-      margin: $LARGE 0 $XXLARGE;
-      padding: 0 $SMALL;
-      text-align: center;
+        z-index: 30;
+        margin: $LARGE 0 $XXLARGE;
+        padding: 0 $SMALL;
+        text-align: center;
+      }
+      &-divide {
+        height: 5vh;
+        background-color: white;
+        svg {
+          display: none;
+        }
+      }
+    }
+    &__goals {
+      margin-top: $XLARGE;
     }
   }
 }
