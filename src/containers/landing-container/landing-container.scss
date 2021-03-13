@@ -10,14 +10,13 @@
       object-fit: cover;
     }
     &__title {
-      @include font-type($MAIN_FONT, $LARGE, bold);
+      @include font-type($MAIN_FONT, $LARGE);
 
       margin: $LARGE 0;
       text-align: center;
     }
     &__mission {
-      @include font-type($SEC_FONT, $MEDIUM);
-      @include font-type($SEC_FONT, $MIDLARGE);
+      @include font-type($MAIN_FONT, $MIDLARGE);
 
       margin: $LARGE 0 $XXLARGE;
       padding: 0 $SMALL;

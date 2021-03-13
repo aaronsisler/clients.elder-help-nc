@@ -49,10 +49,13 @@ $XLARGE_SCREEN: 1441px;
 $XXLARGE_SCREEN: 1921px;
 
 // Site Fonts
-$MAIN_FONT: "Gotham Regular";
-$MAIN_FONT_LIGHT: "Gotham Light";
-$SEC_FONT: "Gilmer Regular";
-$SEC_FONT_LIGHT: "Gilmer Light";
+// $MAIN_FONT: "Gotham Regular";
+// $MAIN_FONT_LIGHT: "Gotham Light";
+// $SEC_FONT: "Gilmer Regular";
+// $SEC_FONT_LIGHT: "Gilmer Light";
+
+$MAIN_FONT: "Ubuntu Light", sans-serif;
+$SEC_FONT: "Ubuntu Regular", sans-serif;
 
 // Fonts CDN
 $FONTS_CDN: "https://cdn-e-and-b-solutions.s3.amazonaws.com/resources/fonts";

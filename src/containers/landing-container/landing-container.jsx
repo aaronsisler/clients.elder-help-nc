@@ -10,7 +10,7 @@ const CDN_URL = getCdnUrl("/landing");
 
 const splashImage = {
   altText: "Flowers on the front outdoor porch",
-  imgSrc: `${CDN_URL}/landing-container__splash-image-3.jpg`
+  imgSrc: `${CDN_URL}/landing-container__splash-image-1.jpg`
 };
 
 const LandingContainer = () => (
