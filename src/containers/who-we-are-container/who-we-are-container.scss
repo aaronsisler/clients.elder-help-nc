@@ -3,6 +3,38 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .who-we-are-container {
+    &__mission {
+      &-title {
+        @include font-type($MAIN_FONT, $LARGE);
+
+        margin: $LARGE 0;
+        text-align: center;
+      }
+      &-content {
+        @include font-type($MAIN_FONT, $MIDLARGE);
+
+        margin: $LARGE 0 $XXLARGE;
+        padding: 0 $SMALL;
+        text-align: center;
+      }
+    }
+    &__vision {
+      &-title {
+        @include font-type($MAIN_FONT, $LARGE);
+
+        margin: $LARGE 0;
+        text-align: center;
+      }
+      &-content {
+        @include font-type($MAIN_FONT, $MIDLARGE);
+
+        margin: $LARGE 0 $XXLARGE;
+        padding: 0 $SMALL;
+        text-align: center;
+      }
+    }
+  }
 }
 
 //Medium screens - TABLET

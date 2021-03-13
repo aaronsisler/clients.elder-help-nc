@@ -15,6 +15,9 @@ export const CONTACT_EMAIL = "elderhelp.org@gmail.com ";
 // Client Name
 export const CLIENT_NAME = "Elder Help NC";
 
+// Social Media
+export const FACEBOOK_URL = "https://www.facebook.com/ElderHelpNC";
+
 // Phone number
 export const CONTACT_PHONE_NUMBER = "(252)-210-3751";
 

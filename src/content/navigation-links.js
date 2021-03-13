@@ -1,7 +1,7 @@
 const navigationLinks = [
   {
     key: "who-we-are",
-    title: "Who we are",
+    title: "Who We Are",
     href: "/who-we-are"
   },
   {

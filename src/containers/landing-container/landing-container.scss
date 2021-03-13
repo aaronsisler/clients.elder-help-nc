@@ -11,7 +11,6 @@
       flex-direction: column;
       overflow: hidden;
       background-color: $MAIN_COLOR;
-      // background-color: $SEC_COLOR;
       &::after {
         position: absolute;
         bottom: 0;
@@ -20,7 +19,6 @@
         width: 125%;
         height: 25vh;
         background-color: $MAIN_COLOR;
-        // background-color: $SEC_COLOR;
         border-radius: 50%;
         transform: translateX(-50%);
         transform-origin: bottom;
@@ -33,7 +31,6 @@
       }
       &-title {
         @include font-type($MAIN_FONT, $LARGE, 400, white);
-        // @include font-type($MAIN_FONT, $LARGE, 400, $MAIN_COLOR);
 
         z-index: 30;
         margin: $LARGE 0;
@@ -41,7 +38,6 @@
       }
       &-mission {
         @include font-type($MAIN_FONT, $MIDLARGE, 400, white);
-        // @include font-type($MAIN_FONT, $MIDLARGE, 400, $MAIN_COLOR);
 
         z-index: 30;
         margin: $LARGE 0 $XXLARGE;
@@ -51,9 +47,6 @@
       &-divide {
         height: 5vh;
         background-color: white;
-        svg {
-          display: none;
-        }
       }
     }
     &__goals {
@@ -82,10 +75,6 @@
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
   .landing-container {
-    &__splash {
-    }
-    &__title {
-    }
     &__mission {
       margin: $LARGE 0 $LARGE;
     }
