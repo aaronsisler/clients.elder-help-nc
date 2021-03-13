@@ -32,7 +32,7 @@ const WhatWeDoContainer = () => (
         Dana Rabon (Right) and Vice President, Audrey Clark (Left)
       </figcaption>
     </figure>
-    <p className="what-we-do-container__main-content">
+    <p className="what-we-do-container__secondary-content">
       We champion partnerships that bring together expertise, ideas, tools and
       resources in support of the shared goal of creating a better tomorrow.
     </p>

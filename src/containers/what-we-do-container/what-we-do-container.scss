@@ -31,8 +31,18 @@
           padding: $LARGE 0 $SMALL;
         }
         &-caption {
+          padding: 0 $SMALL;
           text-align: center;
         }
+      }
+    }
+    &__secondary {
+      &-content {
+        @include font-type($MAIN_FONT, $MIDLARGE);
+
+        margin: $MEDIUM 0 $XXLARGE;
+        padding: 0 $SMALL;
+        text-align: center;
       }
     }
   }

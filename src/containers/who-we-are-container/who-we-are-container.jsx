@@ -1,9 +1,19 @@
 import React from "react";
+import Image from "../../atoms/image";
+import { getCdnUrl } from "../../utils";
 
 import "./who-we-are-container.scss";
 
+const CDN_URL = getCdnUrl("/who-we-are");
+
+const splashImage = {
+  altText: "Elderly man with an aide looking at computer",
+  imgSrc: `${CDN_URL}/who-we-are-container__man-with-aide.jpg`
+};
+
 const WhoWeAreContainer = () => (
   <div className="who-we-are-container">
+    <Image className="who-we-are-container__splash-image" {...splashImage} />
     <h2 className="who-we-are-container__mission-title">Our Mission</h2>
     <p className="who-we-are-container__mission-content">
       To develop, organize and provide Health, Education, Local resources and
