@@ -8,9 +8,9 @@ export const GOOGLE_MAPS_LOCATION =
   "https://www.google.com/maps/place/143+Rosedale+Dr,+Elizabeth+City,+NC+27909/@36.3233234,-76.2183693";
 
 // Contact Email
-export const CONTACT_EMAIL = "elderhelp.org@gmail.com ";
+// export const CONTACT_EMAIL = "elderhelp.org@gmail.com ";
 //Testing
-// export const CONTACT_EMAIL = "aaron.sisler@eandbsolutions.com";
+export const CONTACT_EMAIL = "aaron.sisler@eandbsolutions.com";
 
 // Client Name
 export const CLIENT_NAME = "Elder Help NC";
