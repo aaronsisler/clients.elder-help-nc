@@ -4,6 +4,8 @@
 //Small screens - MOBILE
 @media only screen {
   .who-we-are-container {
+    display: grid;
+    margin-bottom: $XXLARGE;
     &__mission {
       &-title {
         @include font-type($MAIN_FONT, $LARGE);
@@ -15,7 +17,7 @@
         @include font-type($MAIN_FONT, $MIDLARGE);
 
         margin: $LARGE 0 $XXLARGE;
-        padding: 0 $SMALL;
+        padding: 0 $MIDSMALL;
         text-align: center;
       }
     }
@@ -29,9 +31,40 @@
       &-content {
         @include font-type($MAIN_FONT, $MIDLARGE);
 
-        margin: $LARGE 0 $XXLARGE;
+        margin: $XLARGE 0;
+        padding: 0 $MIDSMALL;
+        text-align: center;
+      }
+    }
+    &__partnerships {
+      &-title {
+        @include font-type($MAIN_FONT, $LARGE);
+
+        margin: $LARGE 0 $MEDIUM;
+        text-align: center;
+      }
+      &-content {
+        @include font-type($MAIN_FONT, $MIDLARGE);
+
+        margin: $MEDIUM 0;
         padding: 0 $SMALL;
         text-align: center;
+      }
+    }
+    &__cta {
+      @include CTA-link();
+
+      margin: $MEDIUM auto;
+    }
+    &__chamber-figure {
+      .who-we-are-container__figure {
+        &-image {
+          padding: $LARGE 0 $SMALL;
+        }
+        &-caption {
+          padding: 0 $SMALL;
+          text-align: center;
+        }
       }
     }
   }
@@ -39,6 +72,16 @@
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .who-we-are-container {
+    &__splash-image {
+      height: 100%;
+      max-height: 50vmin;
+      object-fit: scale-down;
+    }
+    &__vision-image {
+      height: 50vmin;
+    }
+  }
 }
 
 //Large screens - DESKTOP
