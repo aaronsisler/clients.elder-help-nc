@@ -44,7 +44,7 @@ const WhoWeAreContainer = () => (
     </p>
     <Hyperlink
       href="/take-action"
-      title="Get Involved"
+      title="Get&nbsp;Involved"
       className="who-we-are-container__cta"
     />
     <h2 className="who-we-are-container__partnerships-title">Partnerships</h2>
