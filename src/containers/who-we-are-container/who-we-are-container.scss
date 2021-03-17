@@ -6,11 +6,14 @@
   .who-we-are-container {
     display: grid;
     margin-bottom: $XXLARGE;
+    &__splash-image {
+      object-fit: contain;
+    }
     &__mission {
       &-title {
         @include font-type($MAIN_FONT, $LARGE);
 
-        margin: $LARGE 0;
+        margin-top: $XLARGE;
         text-align: center;
       }
       &-content {
@@ -25,22 +28,27 @@
       &-title {
         @include font-type($MAIN_FONT, $LARGE);
 
-        margin: $LARGE 0;
+        margin-top: $XLARGE;
         text-align: center;
       }
       &-content {
         @include font-type($MAIN_FONT, $MIDLARGE);
 
-        margin: $XLARGE 0;
+        margin-top: $LARGE;
         padding: 0 $MIDSMALL;
         text-align: center;
       }
+    }
+    &__cta {
+      @include CTA-link();
+
+      margin: $XLARGE auto $MEDIUM;
     }
     &__partnerships {
       &-title {
         @include font-type($MAIN_FONT, $LARGE);
 
-        margin: $LARGE 0 $MEDIUM;
+        margin-top: $MEDIUM;
         text-align: center;
       }
       &-content {
@@ -51,12 +59,8 @@
         text-align: center;
       }
     }
-    &__cta {
-      @include CTA-link();
-
-      margin: $MEDIUM auto;
-    }
     &__chamber-figure {
+      margin-bottom: $MEDIUM;
       .who-we-are-container__figure {
         &-image {
           padding: $LARGE 0 $SMALL;
@@ -73,13 +77,14 @@
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
   .who-we-are-container {
-    &__splash-image {
-      height: 100%;
-      max-height: 50vmin;
-      object-fit: scale-down;
+    img {
+      max-height: 40vmin;
     }
-    &__vision-image {
-      height: 50vmin;
+    p,
+    figcaption {
+      max-width: $MAX_LINE_LENGTH;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 }

@@ -31,7 +31,7 @@ const WhoWeAreContainer = () => (
       Personal needs (HELP) to the elderly and disabled.
     </p>
     <Image className="who-we-are-container__vision-image" {...visionImage} />
-    <h3 className="who-we-are-container__vision-title">Our Vision</h3>
+    <h2 className="who-we-are-container__vision-title">Our Vision</h2>
     <p className="who-we-are-container__vision-content">
       Elder Help is a unique organization that focuses on public education to
       individuals and families dealing with many types of illnesses, diseases,
@@ -42,17 +42,17 @@ const WhoWeAreContainer = () => (
       residential care communities. Many of these facilities have financial and
       medical shortfalls and other needs unmet by governmental programs.
     </p>
-    <h3 className="who-we-are-container__partnerships-title">Partnerships</h3>
-    <p className="who-we-are-container__partnerships-content">
-      Collaboration is at the core of everything we do. We know that no single
-      organization can solve the complex set of issues contributing to local and
-      national issues.
-    </p>
     <Hyperlink
       href="/take-action"
       title="Get Involved"
       className="who-we-are-container__cta"
     />
+    <h2 className="who-we-are-container__partnerships-title">Partnerships</h2>
+    <p className="who-we-are-container__partnerships-content">
+      Collaboration is at the core of everything we do. We know that no single
+      organization can solve the complex set of issues contributing to local and
+      national issues.
+    </p>
     <figure className="who-we-are-container__chamber-figure">
       <Image className="who-we-are-container__figure-image" {...chamberImage} />
       <figcaption className="who-we-are-container__figure-caption">

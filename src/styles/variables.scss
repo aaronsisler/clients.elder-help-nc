@@ -36,23 +36,18 @@ $footerHeight: 50px;
 $inboxHeight: 85vh;
 $lineHeight: 1.5;
 
-//Component Heights
+//Component Dimensions
 $NAV_MENU_HEIGHT: 65px;
 $FOOTER_HEIGHT: 50px;
 $MAIN_HEIGHT: calc(100vh - 115px);
 $LINE_HEIGHT: 1.5;
+$MAX_LINE_LENGTH: 764px;
 
 // Screen Breakpoints
 $MEDIUM_SCREEN: 641px;
 $LARGE_SCREEN: 1025px;
 $XLARGE_SCREEN: 1441px;
 $XXLARGE_SCREEN: 1921px;
-
-// Site Fonts
-// $MAIN_FONT: "Gotham Regular";
-// $MAIN_FONT_LIGHT: "Gotham Light";
-// $SEC_FONT: "Gilmer Regular";
-// $SEC_FONT_LIGHT: "Gilmer Light";
 
 $MAIN_FONT: "Ubuntu Light", sans-serif;
 $SEC_FONT: "Ubuntu Regular", sans-serif;
