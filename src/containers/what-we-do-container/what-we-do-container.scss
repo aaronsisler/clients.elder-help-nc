@@ -5,42 +5,36 @@
 @media only screen {
   .what-we-do-container {
     display: grid;
-    &__main {
-      &-title {
-        @include font-type($MAIN_FONT, $LARGE);
+    &__title {
+      @include font-type($MAIN_FONT, $LARGE);
 
-        margin: $LARGE 0 $MEDIUM;
-        text-align: center;
-      }
-      &-content {
-        @include font-type($MAIN_FONT, $MIDLARGE);
+      margin: $LARGE 0 $MEDIUM;
+      text-align: center;
+    }
+    &__content {
+      @include font-type($MAIN_FONT, $MIDLARGE);
 
-        margin: $MEDIUM 0;
-        padding: 0 $SMALL;
-        text-align: center;
-      }
+      margin: $MEDIUM 0;
+      padding: 0 $SMALL;
+      text-align: center;
     }
     &__cta {
       @include CTA-link();
 
-      margin: $MEDIUM auto;
+      margin: $SMALL auto $XLARGE;
     }
-    &__chamber-figure {
-      .what-we-do-container__figure {
-        &-image {
-          padding: $LARGE 0 $SMALL;
-        }
-        &-caption {
-          padding: 0 $SMALL;
-          text-align: center;
-        }
+    &__events {
+      margin-top: $MEDIUM;
+    }
+    &__event {
+      margin-bottom: $LARGE;
+      &-image {
+        margin: 0; // Remove me
       }
-    }
-    &__secondary {
       &-content {
-        @include font-type($MAIN_FONT, $MIDLARGE);
+        @include font-type($MAIN_FONT, $MEDIUM);
 
-        margin: $MEDIUM 0 $XXLARGE;
+        margin: $MIDLARGE 0;
         padding: 0 $SMALL;
         text-align: center;
       }
