@@ -43,7 +43,7 @@ const WhoWeAreContainer = () => (
       medical shortfalls and other needs unmet by governmental programs.
     </p>
     <Hyperlink
-      href="/take-action"
+      href="/get-in-touch"
       title="Get&nbsp;Involved"
       className="who-we-are-container__cta"
     />

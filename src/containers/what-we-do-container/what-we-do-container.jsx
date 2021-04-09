@@ -8,14 +8,14 @@ import "./what-we-do-container.scss";
 const WhatWeDoContainer = () => (
   <div className="what-we-do-container">
     <h2 className="what-we-do-container__title">What We Do</h2>
-    <div className="what-we-do-container__content">
+    <p className="what-we-do-container__content">
       Being a part of a community is not something we take lightly. Our mission
       allows us to bring together different audiences. This mingling allows for
       educational opportunites in the needs of the senior community as well as
       provide much needed services.
-    </div>
+    </p>
     <Hyperlink
-      href="/take-action"
+      href="/get-in-touch"
       title="Get Involved"
       className="what-we-do-container__cta"
     />
@@ -24,7 +24,7 @@ const WhatWeDoContainer = () => (
       {whatWeDo.map(({ key, imgSrc, altText, content }) => (
         <div className="what-we-do-container__event" key={key}>
           <Image
-            className="who-we-are-container__event-image"
+            className="what-we-do-container__event-image"
             altText={altText}
             imgSrc={imgSrc}
           />

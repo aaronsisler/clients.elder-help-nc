@@ -8,33 +8,32 @@
     &__title {
       @include font-type($MAIN_FONT, $LARGE);
 
-      margin: $LARGE 0 $MEDIUM;
+      margin-top: $LARGE;
       text-align: center;
     }
     &__content {
       @include font-type($MAIN_FONT, $MIDLARGE);
 
-      margin: $MEDIUM 0;
+      max-width: $MAX_LINE_LENGTH;
+      margin: $LARGE auto 0;
       padding: 0 $SMALL;
       text-align: center;
     }
     &__cta {
       @include CTA-link();
 
-      margin: $SMALL auto $XLARGE;
+      margin: $LARGE auto 0;
     }
     &__events {
-      margin-top: $MEDIUM;
+      margin-top: $LARGE;
     }
     &__event {
       margin-bottom: $LARGE;
-      &-image {
-        margin: 0; // Remove me
-      }
       &-content {
         @include font-type($MAIN_FONT, $MEDIUM);
 
-        margin: $MIDLARGE 0;
+        max-width: $MAX_LINE_LENGTH;
+        margin: $MIDLARGE auto;
         padding: 0 $SMALL;
         text-align: center;
       }
@@ -44,6 +43,14 @@
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .what-we-do-container {
+    &__event {
+      &-image {
+        max-height: 40vmin;
+        object-fit: contain;
+      }
+    }
+  }
 }
 
 //Large screens - DESKTOP
