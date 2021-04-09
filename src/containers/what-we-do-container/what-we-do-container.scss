@@ -5,42 +5,35 @@
 @media only screen {
   .what-we-do-container {
     display: grid;
-    &__main {
-      &-title {
-        @include font-type($MAIN_FONT, $LARGE);
+    &__title {
+      @include font-type($MAIN_FONT, $LARGE);
 
-        margin: $LARGE 0 $MEDIUM;
-        text-align: center;
-      }
-      &-content {
-        @include font-type($MAIN_FONT, $MIDLARGE);
+      margin-top: $LARGE;
+      text-align: center;
+    }
+    &__content {
+      @include font-type($MAIN_FONT, $MIDLARGE);
 
-        margin: $MEDIUM 0;
-        padding: 0 $SMALL;
-        text-align: center;
-      }
+      max-width: $MAX_LINE_LENGTH;
+      margin: $LARGE auto 0;
+      padding: 0 $SMALL;
+      text-align: center;
     }
     &__cta {
       @include CTA-link();
 
-      margin: $MEDIUM auto;
+      margin: $LARGE auto 0;
     }
-    &__chamber-figure {
-      .what-we-do-container__figure {
-        &-image {
-          padding: $LARGE 0 $SMALL;
-        }
-        &-caption {
-          padding: 0 $SMALL;
-          text-align: center;
-        }
-      }
+    &__events {
+      margin-top: $LARGE;
     }
-    &__secondary {
+    &__event {
+      margin-bottom: $LARGE;
       &-content {
-        @include font-type($MAIN_FONT, $MIDLARGE);
+        @include font-type($MAIN_FONT, $MEDIUM);
 
-        margin: $MEDIUM 0 $XXLARGE;
+        max-width: $MAX_LINE_LENGTH;
+        margin: $MIDLARGE auto;
         padding: 0 $SMALL;
         text-align: center;
       }
@@ -50,6 +43,14 @@
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .what-we-do-container {
+    &__event {
+      &-image {
+        max-height: 40vmin;
+        object-fit: contain;
+      }
+    }
+  }
 }
 
 //Large screens - DESKTOP
