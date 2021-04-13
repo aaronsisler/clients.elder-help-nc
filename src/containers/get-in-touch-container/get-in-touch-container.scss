@@ -4,43 +4,20 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .contact-container {
-    background-color: white;
+  .get-in-touch-container {
+    min-height: calc(100vh - #{$NAV_MENU_HEIGHT} - #{$FOOTER_HEIGHT});
+    padding: $MEDIUM $SMALL $XLARGE;
     background-image: linear-gradient(
       315deg,
       $MAIN_COLOR_INVERTED 0%,
       rgba(65, 20, 124, 0.404) 74%
     );
-    &__content {
-      display: grid;
-      grid-gap: $MEDIUM;
-      padding: $MEDIUM $SMALL $XLARGE;
-    }
-    &__visit {
-      display: grid;
-      grid-gap: $MEDIUM;
-      padding: $MEDIUM;
-      text-align: center;
-      background: white;
-      box-shadow: $BOX_SHADOW;
-      opacity: 0.95;
-    }
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
-  .contact-container {
-    min-height: calc(100vh - #{$NAV_MENU_HEIGHT});
-    &__content {
-      grid-template-columns: auto auto;
-      justify-content: center;
-      margin: 0 auto;
-    }
-    &__visit {
-      max-width: 30vw;
-      height: fit-content;
-    }
+  .get-in-touch-container {
   }
 }
 
