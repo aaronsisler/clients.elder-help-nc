@@ -15,6 +15,10 @@ export const CONTACT_EMAIL = "aaron.sisler@eandbsolutions.com";
 // Client Name
 export const CLIENT_NAME = "Elder Help NC";
 
+// Request Assistance Form
+export const REQUEST_ASSISTANCE_PDF_FILENAME =
+  "Elder_Help_Assistance_Request_Form.pdf";
+
 // Social Media
 export const FACEBOOK_URL = "https://www.facebook.com/ElderHelpNC";
 
