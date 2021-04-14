@@ -3,6 +3,22 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .take-action-container {
+    padding: $MEDIUM;
+    &__title {
+      @include font-type($MAIN_FONT, $MIDLARGE);
+
+      margin-bottom: $SMALL;
+      text-align: center;
+    }
+    &__content {
+      @include font-type($MAIN_FONT, $MEDIUM);
+
+      max-width: $MAX_LINE_LENGTH;
+      margin: $MIDLARGE auto;
+      text-align: center;
+    }
+  }
 }
 
 //Medium screens - TABLET

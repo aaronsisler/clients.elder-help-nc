@@ -4,14 +4,23 @@
 //Small screens - MOBILE
 @media only screen {
   .contact-address {
-    h2 {
-      @include font-type($MAIN_FONT, $MEDIUM, bold);
+    margin: $XLARGE auto;
+    padding: $LARGE;
+    text-align: center;
+    background-color: $MAIN_COLOR;
+    &__line {
+      @include font-type($MAIN_FONT, $MIDLARGE);
+
+      color: white;
     }
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .contact-address {
+    max-width: 375px;
+  }
 }
 
 //Large screens - DESKTOP
