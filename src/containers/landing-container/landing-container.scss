@@ -4,6 +4,7 @@
 //Small screens - MOBILE
 @media only screen {
   .landing-container {
+    padding-bottom: $XXLARGE;
     &__splash {
       position: relative;
       z-index: 20;
@@ -51,6 +52,13 @@
     }
     &__goals {
       margin-top: $XLARGE;
+    }
+    &__cta {
+      @include CTA-link();
+
+      display: grid;
+      max-width: 250px;
+      margin: $XLARGE auto $MIDLARGE;
     }
   }
 }

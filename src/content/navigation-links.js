@@ -9,11 +9,11 @@ const navigationLinks = [
     title: "What We Do",
     href: "/what-we-do"
   },
-  // {
-  //   key: "take-action",
-  //   title: "Take Action",
-  //   href: "/take-action"
-  // },
+  {
+    key: "take-action",
+    title: "Take Action",
+    href: "/take-action"
+  },
   {
     key: "get-in-touch",
     title: "Get In Touch",
