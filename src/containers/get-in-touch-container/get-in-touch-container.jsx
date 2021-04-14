@@ -7,9 +7,11 @@ import "./get-in-touch-container.scss";
 
 const GetInTouchContainer = () => (
   <div className="get-in-touch-container">
-    <RequestHelp />
-    <ContactPhone />
-    <ContactForm />
+    <div className="get-in-touch-container__content">
+      <RequestHelp />
+      <ContactPhone />
+      <ContactForm />
+    </div>
   </div>
 );
 
