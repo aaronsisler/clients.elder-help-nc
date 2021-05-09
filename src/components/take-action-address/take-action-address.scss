@@ -3,38 +3,24 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .contact-address {
-    display: grid;
-    gap: $SMALL;
-    margin-bottom: $MEDIUM;
-    padding: $MEDIUM;
+  .take-action-address {
+    margin: $XLARGE auto;
+    padding: $LARGE;
     text-align: center;
-    background: white;
-    box-shadow: $BOX_SHADOW;
-    &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE);
-    }
-    &__content {
-      &-line {
-        @include font-type($MAIN_FONT, $MIDLARGE);
-      }
-    }
-    &__nav-link {
+    background-color: $MAIN_COLOR;
+    &__line {
       @include font-type($MAIN_FONT, $MIDLARGE);
 
-      color: $MAIN_COLOR;
-      text-decoration: none;
-      cursor: pointer;
-      &:disabled {
-        cursor: not-allowed;
-        opacity: 0.5;
-      }
+      color: white;
     }
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .take-action-address {
+    max-width: 375px;
+  }
 }
 
 //Large screens - DESKTOP

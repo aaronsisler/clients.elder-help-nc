@@ -23,7 +23,7 @@ export const REQUEST_ASSISTANCE_PDF_FILENAME =
 export const FACEBOOK_URL = "https://www.facebook.com/ElderHelpNC";
 
 // Phone number
-export const CONTACT_PHONE_NUMBER = "(252)-210-3751";
+export const CONTACT_PHONE_NUMBER = "(252) 562-6593";
 
 // Services Gateway
 // export const SERVICES_GATEWAY_URL = "https://services.eandbsolutions.com/beta";
