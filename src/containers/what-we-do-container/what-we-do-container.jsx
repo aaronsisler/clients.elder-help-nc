@@ -3,7 +3,7 @@ import Hyperlink from "../../atoms/hyperlink";
 import Image from "../../atoms/image";
 import whatWeDo from "../../content/what-we-do";
 
-import "./what-we-do-container.scss";
+import styles from "./what-we-do-container.module.scss";
 
 const WhatWeDoContainer = () => (
   <div className="what-we-do-container">
@@ -21,12 +21,12 @@ const WhatWeDoContainer = () => (
     />
     <h2 className="what-we-do-container__title">Recent Events</h2>
     <div className="what-we-do-container__events">
-      {whatWeDo.map(({ key, imgSrc, altText, content }) => (
+      {whatWeDo.map(({ key, src, alt, content }) => (
         <div className="what-we-do-container__event" key={key}>
           <Image
             className="what-we-do-container__event-image"
-            altText={altText}
-            imgSrc={imgSrc}
+            alt={alt}
+            img={src}
           />
           <p className="what-we-do-container__event-content">{content}</p>
         </div>

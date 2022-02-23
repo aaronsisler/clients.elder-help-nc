@@ -7,7 +7,7 @@ import Hamburger from "../../atoms/hamburger";
 
 import navigationLinks from "../../content/navigation-links";
 
-import "./navbar.scss";
+import styles from "./navbar.module.scss";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -31,8 +31,9 @@ const Navbar = () => {
         />
       </div>
       <div className={cn("navbar__links", menuToggledClass)}>
-        {navigationLinks.map(navLink => (
+        {navigationLinks.map((navLink, index) => (
           <Hyperlink
+            key={index}
             className="navbar__link"
             onClick={() => setMenuOpen(false)}
             {...navLink}

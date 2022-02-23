@@ -1,7 +1,7 @@
 import React from "react";
 import TakeActionAddress from "../../components/take-action-address";
 
-import "./take-action-container.scss";
+import styles from "./take-action-container.module.scss";
 
 const TakeActionContainer = () => (
   <div className="take-action-container">

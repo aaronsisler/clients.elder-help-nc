@@ -1,9 +1,9 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .contact-address {
+  .contactAddress {
     display: grid;
     gap: $SMALL;
     margin-bottom: $MEDIUM;
@@ -15,11 +15,11 @@
       @include font-type($MAIN_FONT, $MIDLARGE);
     }
     &__content {
-      &-line {
+      &Line {
         @include font-type($MAIN_FONT, $MIDLARGE);
       }
     }
-    &__nav-link {
+    &__navLink {
       @include font-type($MAIN_FONT, $MIDLARGE);
 
       color: $MAIN_COLOR;

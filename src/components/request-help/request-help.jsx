@@ -1,7 +1,7 @@
 import React from "react";
 import RequestHelpDownload from "../request-help-download";
 
-import "./request-help.scss";
+import styles from "./request-help.module.scss";
 
 const RequestHelp = () => (
   <div className="request-help">

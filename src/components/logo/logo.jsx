@@ -2,7 +2,7 @@ import React from "react";
 import NextLink from "next/link";
 import { CDN_URL } from "../../config";
 
-import "./logo.scss";
+import styles from "./logo.module.scss";
 
 const logo = {
   alt: "Elder Help NC",

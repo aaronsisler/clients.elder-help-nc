@@ -1,18 +1,13 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .external-link {
-    @include font-type($MAIN_FONT, $MEDIUM);
-
-    color: $MAIN_COLOR;
-    text-decoration: none;
-    cursor: pointer;
-    &:disabled {
-      cursor: not-allowed;
-      opacity: 0.5;
-    }
+  .image {
+    // display: block;
+    // width: 100%;
+    // object-fit: scale-down;
+    object-fit: cover;
   }
 }
 

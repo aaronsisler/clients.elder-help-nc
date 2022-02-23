@@ -1,17 +1,26 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .form-error {
-    @include font-type($MAIN_FONT, $MEDIUM);
+  .footer-link-group {
+    &__title {
+      @include font-type($MAIN_FONT, $MIDLARGE, bold);
 
-    color: lighten(darkred, 15);
+      color: $MAIN_COLOR;
+    }
+    &__links {
+      display: flex;
+      flex-flow: column;
+    }
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .footer-link-group {
+    margin-right: $SMALL;
+  }
 }
 
 //Large screens - DESKTOP

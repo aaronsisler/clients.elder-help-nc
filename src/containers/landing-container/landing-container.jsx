@@ -5,13 +5,14 @@ import Image from "../../atoms/image";
 import GoalWidget from "../../components/goal-widget";
 import { getCdnUrl } from "../../utils";
 
-import "./landing-container.scss";
+import styles from "./landing-container.module.scss";
 
 const CDN_URL = getCdnUrl("/landing");
 
 const splashImage = {
-  altText: "Flowers on the front outdoor porch",
-  imgSrc: `${CDN_URL}/landing-container__splash-image.jpg`
+  alt: "Flowers on the front outdoor porch",
+  src: `${CDN_URL}/landing-container__splash-image.jpg`,
+  layout: "fill"
 };
 
 const LandingContainer = () => (

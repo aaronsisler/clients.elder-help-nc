@@ -5,7 +5,7 @@ import { sendEmail } from "../../utils";
 import FormError from "../../atoms/form-error";
 import Input from "../../atoms/input";
 
-import "./contact-form.scss";
+import styles from "./contact-form.module.scss";
 
 const errorMessages = {
   emailAddress: "Please enter a valid email address",
@@ -40,8 +40,8 @@ const ContactForm = () => {
 
   if (emailSent) {
     return (
-      <div className="contact-form">
-        <h1 className="contact-form__email-sent">
+      <div className={styles.contactForm}>
+        <h1 className={styles.contactForm__emailSent}>
           Thank you for reaching out!
           <br />
           We are excited to get back in touch with you.

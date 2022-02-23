@@ -3,23 +3,23 @@ import Hyperlink from "../../atoms/hyperlink";
 import Image from "../../atoms/image";
 import { getCdnUrl } from "../../utils";
 
-import "./who-we-are-container.scss";
+import styles from "./who-we-are-container.module.scss";
 
 const CDN_URL = getCdnUrl("/who-we-are");
 
 const splashImage = {
-  altText: "Elderly man with an aide looking at computer",
-  imgSrc: `${CDN_URL}/who-we-are-container__splash.jpg`
+  alt: "Elderly man with an aide looking at computer",
+  src: `${CDN_URL}/who-we-are-container__splash.jpg`
 };
 
 const visionImage = {
-  altText: "Conference where a girl is taking notes on a paper pad",
-  imgSrc: `${CDN_URL}/who-we-are-container__vision.jpg`
+  alt: "Conference where a girl is taking notes on a paper pad",
+  src: `${CDN_URL}/who-we-are-container__vision.jpg`
 };
 
 const chamberImage = {
-  altText: "Members of Elder Help with Chamber of Commerce member",
-  imgSrc: `${CDN_URL}/who-we-are-container__chamber.jpg`
+  alt: "Members of Elder Help with Chamber of Commerce member",
+  src: `${CDN_URL}/who-we-are-container__chamber.jpg`
 };
 
 const WhoWeAreContainer = () => (

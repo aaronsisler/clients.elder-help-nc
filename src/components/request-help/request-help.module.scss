@@ -1,26 +1,24 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .footer-link-group {
+  .request-help {
+    margin-bottom: $MEDIUM;
+    padding: $MEDIUM;
+    background: white;
+    box-shadow: $BOX_SHADOW;
     &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE, bold);
+      @include font-type($MAIN_FONT, $MIDLARGE);
 
-      color: $MAIN_COLOR;
-    }
-    &__links {
-      display: flex;
-      flex-flow: column;
+      margin-bottom: $SMALL;
+      text-align: center;
     }
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
-  .footer-link-group {
-    margin-right: $SMALL;
-  }
 }
 
 //Large screens - DESKTOP

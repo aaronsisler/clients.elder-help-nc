@@ -1,26 +1,28 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .take-action-address {
-    margin: $XLARGE auto;
-    padding: $LARGE;
-    text-align: center;
-    background-color: $MAIN_COLOR;
-    &__line {
+  .take-action-container {
+    padding: $MEDIUM;
+    &__title {
       @include font-type($MAIN_FONT, $MIDLARGE);
 
-      color: white;
+      margin-bottom: $SMALL;
+      text-align: center;
+    }
+    &__content {
+      @include font-type($MAIN_FONT, $MEDIUM);
+
+      max-width: $MAX_LINE_LENGTH;
+      margin: $MIDLARGE auto;
+      text-align: center;
     }
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
-  .take-action-address {
-    max-width: 375px;
-  }
 }
 
 //Large screens - DESKTOP

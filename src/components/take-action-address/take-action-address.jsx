@@ -1,7 +1,7 @@
 import React from "react";
 import { CONTACT_ADDRESS } from "../../config";
 
-import "./take-action-address.scss";
+import styles from "./take-action-address.module.scss";
 
 const [streetAddress, cityStateZip] = CONTACT_ADDRESS;
 

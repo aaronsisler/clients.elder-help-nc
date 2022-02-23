@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Hyperlink from "../../atoms/hyperlink";
 
-import "./footer-link-group.scss";
+import styles from "./footer-link-group.module.scss";
 
 const FooterLinkGroup = ({ links, title }) => (
   <div className="footer-link-group">

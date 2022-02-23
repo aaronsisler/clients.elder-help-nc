@@ -1,11 +1,12 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
-//Small screens - MOBILE
+// Small screens - MOBILE
 @media only screen {
   .hyperlink {
-    @include font-type($MAIN_FONT, $MEDIUM, rgba($color: white, $alpha: 0.6));
+    @include font-type($MAIN_FONT, $MEDIUM);
 
+    color: $MAIN_COLOR;
     text-decoration: none;
     cursor: pointer;
     &:disabled {
@@ -15,18 +16,18 @@
   }
 }
 
-//Medium screens - TABLET
+// Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
 }
 
-//Large screens - DESKTOP
+// Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
 }
 
-//XLarge screens
+// XLarge screens
 @media only screen and (min-width: $XLARGE_SCREEN) {
 }
 
-//XXLarge screens
+// XXLarge screens
 @media only screen and (min-width: $XXLARGE_SCREEN) {
 }

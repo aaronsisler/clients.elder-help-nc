@@ -1,5 +1,6 @@
 import React from "react";
-import "./error-container.scss";
+
+import styles from "./error-container.module.scss";
 
 const ErrorContainer = () => (
   <div className="error-container">

@@ -1,20 +1,8 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .request-help {
-    margin-bottom: $MEDIUM;
-    padding: $MEDIUM;
-    background: white;
-    box-shadow: $BOX_SHADOW;
-    &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE);
-
-      margin-bottom: $SMALL;
-      text-align: center;
-    }
-  }
 }
 
 //Medium screens - TABLET

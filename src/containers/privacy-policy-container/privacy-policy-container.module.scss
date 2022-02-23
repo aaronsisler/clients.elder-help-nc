@@ -1,22 +1,19 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .take-action-container {
+  .privacy-policy-container {
     padding: $MEDIUM;
     &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE);
+      @include font-type($MAIN_FONT, $MIDLARGE, bold);
 
-      margin-bottom: $SMALL;
-      text-align: center;
+      margin-bottom: $MEDIUM;
     }
-    &__content {
-      @include font-type($MAIN_FONT, $MEDIUM);
+    &__policy-heading {
+      @include font-type($SEC_FONT, $MEDIUM);
 
-      max-width: $MAX_LINE_LENGTH;
-      margin: $MIDLARGE auto;
-      text-align: center;
+      margin: $MEDIUM 0 $XSMALL;
     }
   }
 }
