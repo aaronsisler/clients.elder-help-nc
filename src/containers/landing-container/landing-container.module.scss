@@ -3,7 +3,7 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .landing-container {
+  .landingContainer {
     padding-bottom: $XXLARGE;
     &__splash {
       position: relative;
@@ -25,19 +25,19 @@
         transform-origin: bottom;
         content: "";
       }
-      &-image {
+      &Image {
         min-height: 45vh;
         max-height: 75vmin;
         object-fit: cover;
       }
-      &-title {
+      &Title {
         @include font-type($MAIN_FONT, $LARGE, 400, white);
 
         z-index: 30;
         margin: $LARGE 0;
         text-align: center;
       }
-      &-mission {
+      &Mission {
         @include font-type($MAIN_FONT, $MIDLARGE, 400, white);
 
         z-index: 30;
@@ -45,7 +45,7 @@
         padding: 0 $SMALL;
         text-align: center;
       }
-      &-divide {
+      &Divide {
         height: 5vh;
         background-color: white;
       }
@@ -65,7 +65,7 @@
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
-  .landing-container {
+  .landingContainer {
     &__mission {
       margin-bottom: $XLARGE;
     }
@@ -82,7 +82,7 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
-  .landing-container {
+  .landingContainer {
     &__mission {
       margin: $LARGE 0 $LARGE;
     }

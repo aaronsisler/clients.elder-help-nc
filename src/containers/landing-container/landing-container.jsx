@@ -12,34 +12,41 @@ const CDN_URL = getCdnUrl("/landing");
 const splashImage = {
   alt: "Flowers on the front outdoor porch",
   src: `${CDN_URL}/landing-container__splash-image.jpg`,
-  layout: "fill"
+  layout: "fill",
 };
 
 const LandingContainer = () => (
-  <div className="landing-container">
-    <div className="landing-container__splash">
-      <Image className="landing-container__splash-image" {...splashImage} />
-      <h2 className="landing-container__splash-title">Elder Help's Mission</h2>
-      <p className="landing-container__splash-mission">
+  <div className={styles.landingContainer}>
+    <div className={styles.landingContainer__splash}>
+      <Image
+        className={styles.landingContainer__splashImage}
+        alt={splashImage.alt}
+        src={splashImage.src}
+        layout={splashImage.layout}
+      />
+      <h2 className={styles.landingContainer__splashTitle}>
+        Elder Help&apos;s Mission
+      </h2>
+      <p className={styles.landingContainer__splashMission}>
         To develop, organize and provide Health, Education, Local resources and
         Personal needs (HELP) to the elderly and disabled.
       </p>
-      <div className="landing-container__splash-divide" />
+      <div className={styles.landingContainer__splashDivide} />
     </div>
-    <div className="landing-container__goals">
-      {goals.map(({ key, imgSrc, title }) => (
+    <div className={styles.landingContainer__goals}>
+      {/* {goals.map(({ key, imgSrc, title }) => (
         <GoalWidget
           key={key}
-          className="landing-container__goal-widget"
+          // className={styles.landingContainer__goalWidget}
           imgSrc={imgSrc}
           title={title}
         />
-      ))}
+      ))} */}
     </div>
     <Hyperlink
       href="/who-we-are"
       title="More&nbsp;About&nbsp;Us"
-      className="landing-container__cta"
+      className={styles.landingContainer__cta}
     />
   </div>
 );
