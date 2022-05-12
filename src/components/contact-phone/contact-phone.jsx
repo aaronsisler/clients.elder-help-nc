@@ -4,9 +4,9 @@ import { CONTACT_PHONE_NUMBER } from "../../config";
 import styles from "./contact-phone.module.scss";
 
 const ContactPhone = () => (
-  <div className="contact-phone">
-    <h2 className="contact-phone__title">Give us a call</h2>
-    <div className="contact-phone__content">{CONTACT_PHONE_NUMBER}</div>
+  <div className={styles.contactPhone}>
+    <h2 className={styles.contactPhone__title}>Give us a call</h2>
+    <div className={styles.contactPhone__content}>{CONTACT_PHONE_NUMBER}</div>
   </div>
 );
 

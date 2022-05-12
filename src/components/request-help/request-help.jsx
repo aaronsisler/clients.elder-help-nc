@@ -4,8 +4,8 @@ import RequestHelpDownload from "../request-help-download";
 import styles from "./request-help.module.scss";
 
 const RequestHelp = () => (
-  <div className="request-help">
-    <div className="request-help__title">Need Assistance?</div>
+  <div className={styles.requestHelp}>
+    <div className={styles.requestHelp__title}>Need Assistance?</div>
     <RequestHelpDownload />
   </div>
 );

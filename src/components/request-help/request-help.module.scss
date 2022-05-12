@@ -3,10 +3,11 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .request-help {
+  .requestHelp {
     margin-bottom: $MEDIUM;
     padding: $MEDIUM;
     background: white;
+    border-radius: 5px;
     box-shadow: $BOX_SHADOW;
     &__title {
       @include font-type($MAIN_FONT, $MIDLARGE);
