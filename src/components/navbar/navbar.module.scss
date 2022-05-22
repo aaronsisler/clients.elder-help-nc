@@ -39,7 +39,7 @@
       background-color: $MAIN_COLOR_DARKEN;
       background-color: $MAIN_COLOR;
       transition: transform 0.3s ease;
-      &.navbar--open {
+      &.navbar__open {
         overflow: auto;
         transform: translateX(-101%);
       }

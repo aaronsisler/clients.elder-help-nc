@@ -5,23 +5,23 @@ const goals = [
   {
     key: "goal-health",
     imgSrc: `${CDN_URL}/goal__health.png`,
-    title: "Health"
+    title: "Health",
   },
   {
     key: "goal-education",
     imgSrc: `${CDN_URL}/goal__education.png`,
-    title: "Education"
+    title: "Education",
   },
   {
     key: "goal-local-resources",
     imgSrc: `${CDN_URL}/goal__local-resources.png`,
-    title: "Local Resources"
+    title: "Local Resources",
   },
   {
     key: "goal-personal-needs",
     imgSrc: `${CDN_URL}/goal__personal-needs.png`,
-    title: "Personal Needs"
-  }
+    title: "Personal Needs",
+  },
 ];
 
 export default goals;

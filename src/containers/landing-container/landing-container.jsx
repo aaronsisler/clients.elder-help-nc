@@ -1,7 +1,7 @@
 import React from "react";
 import goals from "../../content/goals";
 import Hyperlink from "../../atoms/hyperlink";
-import Image from "../../atoms/image";
+import { Image } from "../../atoms/image";
 import GoalWidget from "../../components/goal-widget";
 import { getCdnUrl } from "../../utils";
 
@@ -12,18 +12,16 @@ const CDN_URL = getCdnUrl("/landing");
 const splashImage = {
   alt: "Flowers on the front outdoor porch",
   src: `${CDN_URL}/landing-container__splash-image.jpg`,
-  layout: "fill",
 };
 
 const LandingContainer = () => (
   <div className={styles.landingContainer}>
     <div className={styles.landingContainer__splash}>
-      <Image
+      {/* <Image
         className={styles.landingContainer__splashImage}
         alt={splashImage.alt}
         src={splashImage.src}
-        layout={splashImage.layout}
-      />
+      /> */}
       <h2 className={styles.landingContainer__splashTitle}>
         Elder Help&apos;s Mission
       </h2>
@@ -31,17 +29,12 @@ const LandingContainer = () => (
         To develop, organize and provide Health, Education, Local resources and
         Personal needs (HELP) to the elderly and disabled.
       </p>
-      <div className={styles.landingContainer__splashDivide} />
     </div>
+    <div className={styles.landingContainer__splashAccent} />
     <div className={styles.landingContainer__goals}>
-      {/* {goals.map(({ key, imgSrc, title }) => (
-        <GoalWidget
-          key={key}
-          // className={styles.landingContainer__goalWidget}
-          imgSrc={imgSrc}
-          title={title}
-        />
-      ))} */}
+      {goals.map(({ key, imgSrc, title }) => (
+        <GoalWidget key={key} imgSrc={imgSrc} title={title} />
+      ))}
     </div>
     <Hyperlink
       href="/who-we-are"

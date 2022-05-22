@@ -4,38 +4,54 @@
 //Small screens - MOBILE
 @media only screen {
   .landingContainer {
+    padding-bottom: $XXLARGE;
     &__splash {
       position: relative;
-      z-index: 30;
-      padding: $LARGE $SMALL;
-      background-color: $MAIN_COLOR;
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      min-height: 45vh;
+      max-height: 75vmin;
+      overflow: hidden;
+      // background-color: $MAIN_COLOR;
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: 10;
+        width: 125%;
+        height: 25vh;
+        // background-color: $MAIN_COLOR;
+        border-radius: 50%;
+        transform: translateX(-50%);
+        transform-origin: bottom;
+        content: "";
+      }
+      &Image {
+        // object-fit: cover;
+      }
       &Title {
         @include font-type($MAIN_FONT, $LARGE, 400, white);
 
-        margin: $LARGE 0 $XXLARGE;
-        padding-inline: $SMALL;
+        z-index: 30;
+        margin: $LARGE 0;
         text-align: center;
       }
       &Mission {
         @include font-type($MAIN_FONT, $MIDLARGE, 400, white);
 
-        padding-inline: $SMALL;
+        z-index: 30;
+        margin: $LARGE 0 $XXLARGE;
+        padding: 0 $SMALL;
         text-align: center;
       }
-      &Accent {
-        position: absolute;
-        z-index: 10;
-        width: 125%;
-        height: 25vh;
-        background-color: $MAIN_COLOR;
-        border-radius: 50%;
-        transform: translate(-10%, -50%);
-        transform-origin: bottom;
+      &Divide {
+        height: 5vh;
+        background-color: white;
       }
     }
     &__goals {
-      margin-top: 25vh;
-      // padding-inline: 25%;
+      margin-top: $XLARGE;
     }
     &__cta {
       @include CTA-link();
@@ -51,7 +67,7 @@
 @media only screen and (min-width: $MEDIUM_SCREEN) {
   .landingContainer {
     &__mission {
-      // margin-bottom: $XLARGE;
+      margin-bottom: $XLARGE;
     }
     &__goals {
       display: grid;
@@ -68,7 +84,7 @@
 @media only screen and (min-width: $LARGE_SCREEN) {
   .landingContainer {
     &__mission {
-      // margin: $LARGE 0 $LARGE;
+      margin: $LARGE 0 $LARGE;
     }
     &__goals {
       padding: $SMALL;

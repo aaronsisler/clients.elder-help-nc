@@ -4,9 +4,10 @@
 //Small screens - MOBILE
 @media only screen {
   .image {
-    display: block;
-    width: 100%;
-    object-fit: scale-down;
+    position: relative;
+    &Content {
+      object-fit: cover;
+    }
   }
 }
 
