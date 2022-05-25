@@ -17,11 +17,11 @@ const splashImage = {
 const LandingContainer = () => (
   <div className={styles.landingContainer}>
     <div className={styles.landingContainer__splash}>
-      {/* <Image
+      <Image
         className={styles.landingContainer__splashImage}
         alt={splashImage.alt}
         src={splashImage.src}
-      /> */}
+      />
       <h2 className={styles.landingContainer__splashTitle}>
         Elder Help&apos;s Mission
       </h2>
@@ -29,8 +29,8 @@ const LandingContainer = () => (
         To develop, organize and provide Health, Education, Local resources and
         Personal needs (HELP) to the elderly and disabled.
       </p>
+      <div className={styles.landingContainer__splashDivide} />
     </div>
-    <div className={styles.landingContainer__splashAccent} />
     <div className={styles.landingContainer__goals}>
       {goals.map(({ key, imgSrc, title }) => (
         <GoalWidget key={key} imgSrc={imgSrc} title={title} />
