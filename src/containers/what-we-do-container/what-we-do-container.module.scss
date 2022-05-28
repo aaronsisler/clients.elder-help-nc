@@ -3,7 +3,7 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .what-we-do-container {
+  .whatWeDoContainer {
     display: grid;
     &__title {
       @include font-type($MAIN_FONT, $LARGE);
@@ -29,7 +29,7 @@
     }
     &__event {
       margin-bottom: $LARGE;
-      &-content {
+      &Content {
         @include font-type($MAIN_FONT, $MEDIUM);
 
         max-width: $MAX_LINE_LENGTH;
@@ -43,9 +43,9 @@
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
-  .what-we-do-container {
+  .whatWeDoContainer {
     &__event {
-      &-image {
+      &Image {
         max-height: 40vmin;
         object-fit: contain;
       }
