@@ -3,7 +3,7 @@ import cn from "classnames";
 import PropTypes from "prop-types";
 import Hyperlink from "../hyperlink";
 
-import "./accordion-mobile.scss";
+import styles from "./accordion-mobile.module.scss";
 
 class AccordionMobile extends React.Component {
   constructor(props) {
@@ -21,17 +21,19 @@ class AccordionMobile extends React.Component {
 
   render() {
     const { isExpanded } = this.state;
-    const hoverClassname = isExpanded ? "accordion-mobile--toggled" : undefined;
+    const hoverClassname = isExpanded
+      ? styles.accordionMobileToggled
+      : undefined;
 
     return (
-      <div className="accordion-mobile" onClick={this.handleToggle}>
-        <h1 className={cn("accordion-mobile__title", hoverClassname)}>
+      <div className={styles.accordionMobile} onClick={this.handleToggle}>
+        <h1 className={cn(styles.accordionMobile__title, hoverClassname)}>
           {this.props.title}
         </h1>
-        <div className={cn("accordion-mobile__content", hoverClassname)}>
+        <div className={cn(styles.accordionMobile__content, hoverClassname)}>
           {this.props.links.map((link, index) => (
             <Hyperlink
-              className="accordion-mobile__content-link"
+              className={styles.accordionMobile__contentLink}
               key={index}
               onClick={this.props.onContentClick}
               {...link}

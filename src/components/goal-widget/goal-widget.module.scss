@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .goalWidget {
+    margin-bottom: $XLARGE;
+    &__image {
+      padding: 0 25%;
+    }
+    &__title {
+      @include font-type($MAIN_FONT, $LARGE, 400, $MAIN_COLOR_LIGHTEN);
+
+      margin: $SMALL 0;
+      text-align: center;
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+  .goalWidget {
+    width: 20vmax;
+    max-width: 135px;
+    margin-bottom: 0;
+    &__image {
+      padding: 0 15%;
+    }
+    &__title {
+      font-size: $MIDLARGE;
+    }
+  }
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+  .goalWidget {
+    width: 30vmin;
+    max-width: 225px;
+    margin-bottom: 0;
+    &__image {
+      padding: 0 15%;
+    }
+    &__title {
+      font-size: $MIDLARGE;
+    }
+  }
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

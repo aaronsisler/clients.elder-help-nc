@@ -1,0 +1,102 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .whoWeAreContainer {
+    display: grid;
+    margin-bottom: $XXLARGE;
+    &__splash-image {
+      object-fit: contain;
+    }
+    &__mission {
+      &Title {
+        @include font-type($MAIN_FONT, $LARGE);
+
+        margin-top: $XLARGE;
+        text-align: center;
+      }
+      &Content {
+        @include font-type($MAIN_FONT, $MIDLARGE);
+
+        margin: $LARGE 0 $XXLARGE;
+        padding: 0 $MIDSMALL;
+        text-align: center;
+      }
+    }
+    &__vision {
+      &Title {
+        @include font-type($MAIN_FONT, $LARGE);
+
+        margin-top: $XLARGE;
+        text-align: center;
+      }
+      &Content {
+        @include font-type($MAIN_FONT, $MIDLARGE);
+
+        margin-top: $LARGE;
+        padding: 0 $MIDSMALL;
+        text-align: center;
+      }
+    }
+    &__cta {
+      @include CTA-link();
+
+      margin: $XLARGE auto $MEDIUM;
+    }
+    &__partnerships {
+      &Title {
+        @include font-type($MAIN_FONT, $LARGE);
+
+        margin-top: $MEDIUM;
+        text-align: center;
+      }
+      &Content {
+        @include font-type($MAIN_FONT, $MIDLARGE);
+
+        margin: $MEDIUM 0;
+        padding: 0 $SMALL;
+        text-align: center;
+      }
+    }
+    &__chamberFigure {
+      margin-bottom: $MEDIUM;
+      .whoWeAreContainer__figure {
+        &Image {
+          padding: $LARGE 0 $SMALL;
+        }
+        &Caption {
+          padding: 0 $SMALL;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+  .whoWeAreContainer {
+    img {
+      max-height: 40vmin;
+    }
+    p,
+    figcaption {
+      max-width: $MAX_LINE_LENGTH;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

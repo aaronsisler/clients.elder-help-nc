@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .requestHelp {
+    margin-bottom: $MEDIUM;
+    padding: $MEDIUM;
+    background: white;
+    border-radius: 5px;
+    box-shadow: $BOX_SHADOW;
+    &__title {
+      @include font-type($MAIN_FONT, $MIDLARGE);
+
+      margin-bottom: $SMALL;
+      text-align: center;
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

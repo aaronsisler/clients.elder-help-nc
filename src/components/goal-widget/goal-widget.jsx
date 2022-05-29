@@ -2,21 +2,21 @@ import React from "react";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-import Image from "../../atoms/image";
+import { Image } from "../../atoms/image";
 
-import "./goal-widget.scss";
+import styles from "./goal-widget.module.scss";
 
 const GoalWidget = ({ className, imgSrc, title }) => (
-  <div className={cn("goal-widget", className)}>
-    <Image className="goal-widget__image" imgSrc={imgSrc} altText={title} />
-    <div className="goal-widget__title">{title}</div>
+  <div className={cn(styles.goalWidget, className)}>
+    <Image className={styles.goalWidget__image} src={imgSrc} alt={title} />
+    <div className={styles.goalWidget__title}>{title}</div>
   </div>
 );
 
 GoalWidget.propTypes = {
   className: PropTypes.string,
   imgSrc: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
 export default GoalWidget;
