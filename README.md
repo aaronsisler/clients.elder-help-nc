@@ -13,7 +13,7 @@ Code base for Elder Help NC
 1.  Start NextJS dev server which runs on http://localhost:3000
 
 ```bash
-       npm run start
+       npm run dev
 ```
 
 ## Photo Credits
